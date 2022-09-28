@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.debug{
+  background-color: aqua;
+}
+
+.sidebar{
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 200px;
+}
+
+header{
+  background-color: rgb(18,18,18);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 200px;
+  right: 0;
+}
+
+footer{
+  height: 80px;
+  background-color: rgba(40,40,40,255);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
