@@ -71,7 +71,11 @@ body{
 .pt-10{
   padding-top: 10px;
 }
-.mob{
+.up:hover{
+  color: rgba(245,245,245,255);
+}
+.act:active{
+  border-bottom: green;
 }
 /*----Utilities----*/
 
@@ -90,7 +94,7 @@ a{
   background-color: black;
   height: calc(100vh - 80px);
   width: 200px;
-  color: white;
+  color: rgba(118,120,124,255);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,12 +138,16 @@ a{
 }
 .profile-icon{
   line-height: 30px;
+  color: rgba(245,245,245,255)
 }
 .profile-icon img{
   width: 25px;
   height: 25px;
   background-color: lightgray;
   border-radius: 50%;
+}
+.profile-icon span{
+  padding-left: 5px;
 }
 
 .sidebar-top{
@@ -189,7 +197,7 @@ header{
 main{
   width: calc(100% - 200px);
   height: calc(100vh - 80px);
-  background-color: bisque;
+  background-color: rgba(20,25,34,255);
   padding: 80px 0;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -197,7 +205,7 @@ main{
 }
 
 .central-menu ul a li{
-  color: lightgray;
+  color: rgba(118,120,124,255);
   text-decoration: none;
   list-style: none;
   padding: 10px;
@@ -214,12 +222,21 @@ main{
 .row .col{
   width: calc(100% / 6);
   padding: 10px 10px 10px 0px;
+  align-items: center;
+  text-align: center;
 }
 
 .img-col img{
   object-fit: cover;
   width: 100%;
   height: 180px;
+}
+
+main h3,h4{
+  color: rgba(245,245,245,255);
+}
+main span,p{
+  color: rgba(118,120,124,255);
 }
 
 
@@ -242,3 +259,4 @@ footer{
 
 
 /*----FOOTER----*/
+
