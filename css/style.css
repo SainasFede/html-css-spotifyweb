@@ -290,9 +290,67 @@ footer{
   width: 100%;
 }
 
+footer .song span:hover{
+  color: white
+}
+footer .add-album i:hover{
+  color: white
+}
+
+.foo-center a{
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+
+.foo-center .fa-circle-play{
+  transition: 0.2;
+  font-size: 25px;
+}
+.foo-center .fa-circle-play:hover{
+  scale: 1.2;
+}
+
 .song img{
   width: 60px;
   height: 50px;
+}
+
+.foo-center{
+  text-align: center;
+}
+
+footer .foo-center .line{
+  height: 5px;
+  width: 250px;
+  border-radius: 50px;
+  background-color: grey;
+}
+
+footer .foo-center .line .line-in{
+  height: inherit;
+  width: 100px;
+  border-radius: inherit;
+  background-color: lightgray;
+  position: relative;
+}
+
+.line-in span{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  display: none;
+}
+.line:hover .line-in{
+  background-color: lightgreen;
+}
+
+.line:hover span{
+  display: inline;
 }
 
 
