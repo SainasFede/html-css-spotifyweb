@@ -74,7 +74,9 @@ body{
 .up:hover{
   color: rgba(245,245,245,255);
 }
-
+.act-green{
+  border-bottom: 1px solid green;
+}
 /*----Utilities----*/
 
 
@@ -244,15 +246,25 @@ main{
   z-index: 2;
 }
 .esegui{
-  background-color:rgba(18,18,18,0.8);
+  background-color:rgba(18,18,18,0.3);
   display: none;
   width: 100%;
+  height: 150px;
   z-index: 1;
   position: absolute;
+  top: 0;
+  left: 0;
+}
+.esegui i{
+  font-size: 50px;
+  color: white;
 }
 .img-col:hover .esegui{
   display: inline-block;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle{
