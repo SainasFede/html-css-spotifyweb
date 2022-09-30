@@ -36,8 +36,16 @@ body{
   width: 25%;
 }
 
+.sp-15{
+  width: 15%;
+}
+
 .sp-50{
   width: 50%;
+}
+
+.sp-80{
+  width: 80%;
 }
 
 .c-wh{
@@ -98,6 +106,13 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.sidebar span{
+  font-size: 13px;
+}
+.m-playlist li{
+  font-size: 13px;
 }
 
 .logo{
@@ -297,6 +312,15 @@ footer .add-album i:hover{
   color: white
 }
 
+footer i{
+  font-size: 13px
+}
+
+footer span{
+  font-size: 13px;
+  color: rgba(91,91,91,255);
+}
+
 .foo-center a{
   line-height: 25px;
   margin-bottom: 5px;
@@ -304,7 +328,7 @@ footer .add-album i:hover{
 
 .foo-center .fa-circle-play{
   transition: 0.2;
-  font-size: 25px;
+  font-size: 20px;
 }
 .foo-center .fa-circle-play:hover{
   scale: 1.2;
@@ -320,38 +344,83 @@ footer .add-album i:hover{
 }
 
 footer .foo-center .line{
-  height: 5px;
-  width: 250px;
+  height: 4px;
+  width: 300px;
   border-radius: 50px;
   background-color: grey;
+  margin: 0 10px;
 }
 
 footer .foo-center .line .line-in{
   height: inherit;
-  width: 100px;
+  width: 40%;
   border-radius: inherit;
   background-color: lightgray;
   position: relative;
+  transition: 0.1;
 }
 
 .line-in span{
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  right: 0px;
+  display: none;
+}
+
+.foo-right .spear{
+  height: 4px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: grey;
+  margin: 0 10px;
+}
+
+.foo-right .spear .spear-in{
+  height: inherit;
+  width: 40%;
+  border-radius: inherit;
+  background-color: lightgray;
+  position: relative;
+  transition: 0.1;
+}
+
+.spear-in span{
   content: "";
   width: 10px;
   height: 10px;
   background-color: lightgray;
   border-radius: 50%;
   position: absolute;
-  top: -1px;
+  top: -2px;
   right: 0px;
   display: none;
 }
-.line:hover .line-in{
-  background-color: lightgreen;
+
+footer .foo-center .line:hover .line-in {
+  background-color: greenyellow;
 }
 
 .line:hover span{
   display: inline;
 }
+
+.foo-right .spear:hover .spear-in {
+  background-color: greenyellow;
+}
+
+.spear:hover span{
+  display: inline;
+}
+
+.foo-right i{
+  padding: 0 5px;
+}
+
 
 
 
